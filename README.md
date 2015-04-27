@@ -8,7 +8,7 @@ All credits belong to [Andreas Heider](https://github.com/ah-) who originally di
 https://lists.gnu.org/archive/html/grub-devel/2013-12/msg00442.html
 
 ## Usage:
-Copy apple_set_os.efi to EFI System Partition (ESP) 
+Copy the apple_set_os.efi binary to EFI System Partition (ESP) :
 ```
 mkdir /boot/efi/EFI/tools
 cp apple_set_os.efi /boot/efi/EFI/tools
