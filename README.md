@@ -15,7 +15,7 @@ mkdir /boot/efi/EFI/tools
 cp apple_set_os.efi /boot/efi/EFI/tools
 ```
 
-Grub can be configured to chainload apple_set_os.efi every start by adding the following lines to  ``40_custom``:
+Grub can be configured to chainload apple_set_os.efi every start by adding the following lines to  ``/etc/grub.d/40_custom``:
 ```
 search --no-floppy --set=root --label EFI
 chainloader (${root})/EFI/tools/apple_set_os.efi
