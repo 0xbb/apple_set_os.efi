@@ -16,7 +16,7 @@ cp apple_set_os.efi /boot/efi/EFI/tools
 
 The EFI program can then be chainloaded by any EFI bootloader like Grub, rEFInd etc.
 
-For Grub the following entry in ``40_custom`` can be used to chainload apple_set_os.efi every start.
+For Grub the following entry in ``40_custom`` can be used to chainload apple_set_os.efi every start:
 ```
 search --no-floppy --set=root --label EFI
 chainloader (${root})/EFI/tools/apple_set_os.efi
