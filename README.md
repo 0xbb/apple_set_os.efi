@@ -10,7 +10,16 @@ https://lists.gnu.org/archive/html/grub-devel/2013-12/msg00442.html
 ## Usage:
 Copy apple_set_os.efi to EFI System Partition (ESP) 
 ```
-clone
 mkdir /boot/efi/EFI/tools
 cp apple_set_os.efi /boot/efi/EFI/tools
 ```
+
+The EFI program can then be chainloaded by any EFI bootloader like Grub, rEFInd etc.
+
+For Grub the following entry in ``40_custom`` can be used to chainload apple_set_os.efi every start.
+```
+search --no-floppy --set=root --label EFI
+chainloader (${root})/EFI/tools/apple_set_os.efi
+boot
+```
+
