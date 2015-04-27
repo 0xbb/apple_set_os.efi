@@ -1,5 +1,5 @@
 # apple_set_os.efi
-Tiny EFI program for unlocking the Intel IGD on the Macbook Pro 11,3 for Linux and Windows.  
+Tiny EFI program for unlocking the Intel IGD on the Macbook Pro 11,3 for Linux and Windows. It has been made to be easily chainloaded by standard EFI bootloads like Grub, rEFInd etc.
 
 The Macbook Pro 11,3 model's EFI is switchting off the Intel GPU if you boot anything but Mac OS X.  
 So a little trick by faking the OS identifiction is required to make all hardware accessible.
@@ -13,8 +13,6 @@ Copy the apple_set_os.efi binary to EFI System Partition (ESP) :
 mkdir /boot/efi/EFI/tools
 cp apple_set_os.efi /boot/efi/EFI/tools
 ```
-
-The EFI program can then be chainloaded by any EFI bootloader like Grub, rEFInd etc.
 
 For Grub the following entry in ``40_custom`` can be used to chainload apple_set_os.efi every start:
 ```
