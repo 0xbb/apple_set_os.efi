@@ -2,7 +2,7 @@
 Tiny EFI program for unlocking the Intel IGD on the Macbook Pro 11,3 for Linux and Windows.  
 It has been made to be easily chainloaded by unmodified EFI bootloader like Grub, rEFInd etc.
 
-The Macbook Pro 11,3 model's EFI is switchting off the Intel GPU if you boot anything but Mac OS X.  
+The Macbook Pro 11,3 model's EFI is switching off the Intel GPU if you boot anything but Mac OS X.  
 So a little trick by faking the OS identifiction is required to make all hardware accessible.
 
 All credits belong to [Andreas Heider](https://github.com/ah-) who originally discovered this hack:  
