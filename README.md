@@ -9,7 +9,7 @@ All credits belong to [Andreas Heider](https://github.com/ah-) who originally di
 https://lists.gnu.org/archive/html/grub-devel/2013-12/msg00442.html
 
 ## Usage:
-Copy the apple_set_os.efi binary (download from releases) to EFI System Partition (ESP) :
+Copy the apple_set_os.efi binary (download it from [releases](https://github.com/0xbb/apple_set_os.efi/releases)) to EFI System Partition (ESP) :
 ```
 mkdir /boot/efi/EFI/custom
 cp apple_set_os.efi /boot/efi/EFI/custom
