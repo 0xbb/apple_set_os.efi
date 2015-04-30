@@ -23,3 +23,15 @@ chainloader (${root})/EFI/custom/apple_set_os.efi
 boot
 ```
 
+## Build:
+Tested on Debian Jessie 8.0:
+```
+apt-get install gnu-efi
+git clone https://github.com/0xbb/apple_set_os.efi
+cd apple_set_os.efi
+make
+```
+
+
+
+
