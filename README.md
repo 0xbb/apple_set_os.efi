@@ -14,7 +14,7 @@ Copy the apple_set_os.efi binary (download it from [releases](https://github.com
 mkdir /boot/efi/EFI/custom
 cp apple_set_os.efi /boot/efi/EFI/custom
 ```
-ReEFInd should automatically show a new icon for apple_set_os.efi.
+[rEFInd](http://www.rodsbooks.com/refind/I should automatically show a new icon for apple_set_os.efi.
 
 Grub can be configured to start apple_set_os.efi automatically by adding the following lines to  ``/etc/grub.d/40_custom``:
 ```
