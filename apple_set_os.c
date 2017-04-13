@@ -41,14 +41,12 @@ efi_main(EFI_HANDLE image, EFI_SYSTEM_TABLE *systemTable)
 		conOut->OutputString(conOut, L"Set os version to " APPLE_SET_OS_VERSION  ".\r\n");
 	}
 
-	if(set_os->version == 2){
-		status = set_os->set_os_vendor((CHAR8 *) APPLE_SET_OS_VENDOR);  
-		if(EFI_ERROR(status)){
-			conOut->OutputString(conOut, L"Could not set vendor.\r\n");
-			return status;
-		}
-		conOut->OutputString(conOut, L"Set os vendor to " APPLE_SET_OS_VENDOR  ".\r\n");
+	status = set_os->set_os_vendor((CHAR8 *) APPLE_SET_OS_VENDOR);
+	if(EFI_ERROR(status)){
+		conOut->OutputString(conOut, L"Could not set vendor.\r\n");
+		return status;
 	}
+	conOut->OutputString(conOut, L"Set os vendor to " APPLE_SET_OS_VENDOR  ".\r\n");
 
 	return EFI_SUCCESS;
 }
