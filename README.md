@@ -31,7 +31,9 @@ git clone https://github.com/0xbb/apple_set_os.efi
 cd apple_set_os.efi
 make
 ```
-
-
+## Build via docker
+```bash
+docker build -t apple_set_os . && docker run --rm -it -v $(pwd):/build apple_set_os
+```
 
 
