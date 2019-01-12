@@ -4,6 +4,7 @@
 #include <efidef.h>
 #include <efidevp.h>
 #include <eficon.h>
+#include <efiprot.h>
 #include <efiapi.h>
 #include <efierr.h>
 
